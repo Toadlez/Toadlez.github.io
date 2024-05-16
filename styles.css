@@ -8,7 +8,55 @@
     --dark-blue: #002266;
 }
 
+
+body
+{
+    background-color: var(--sea-green);
+    font-family: "Poetsen One", sans-serif;
+}
+
+
 h1
 {
-    color: var(--sea-green);
+    color: var(--white);
+}
+
+
+h2
+{
+    color: var(--white);
+}
+
+
+div.card
+{
+    max-width: 800px;
+
+    margin: 20px;
+    padding: 0px;
+
+    overflow: hidden;
+
+    border: dashed var(--blue) 4px;
+    border-radius: 20px;
+}
+
+
+div.card img
+{
+    width: 100%;
+
+    margin-bottom: -4px;
+}
+
+
+div.card p
+{
+    margin: 0px;
+    padding: 10px;
+
+    font-size: 24px;
+    /*font-size: calc(100% + 2vw);*/
+
+    background: var(--white);
 }
