@@ -1,0 +1,14 @@
+:root
+{
+    --white: #D8E9FD;
+    --green: #C7EF00;
+    --red: #FE5E41;
+    --sea-green: #2EC4B6;
+    --blue: #1298F8;
+    --dark-blue: #002266;
+}
+
+h1
+{
+    color: var(--sea-green);
+}
