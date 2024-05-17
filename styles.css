@@ -59,7 +59,7 @@ body {
     image-rendering: pixelated;
     filter: drop-shadow(18px 7px 0 #002266);
     right: 0;
-    bottom: 0;
+    bottom: -10px;
 }
 
 .title {
