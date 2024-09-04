@@ -14,6 +14,9 @@ const URL = `${BASE}?tq=${QUERY}`;
 document.addEventListener('DOMContentLoaded', init);
 function init()
 {
+    google.charts.load('current', {'packages':['calendar']});
+
+
     fetch(URL)
     .then(res => res.text())
     .then(rep => {
@@ -47,18 +50,9 @@ function init()
         })
 
 
-        //printQueryStats(QUERY_RESULT);
-
         addSalesTableRows(QUERY_RESULT);
         addFilterOptions(QUERY_RESULT);
     })
-}
-
-
-function printQueryStats(result)
-{
-    console.log(result); // print results
-    console.log(result.length + " rows"); // print number of rows
 }
 
 
@@ -111,7 +105,7 @@ function addFilterOptions(result)
     GAMES.sort();
     
 
-    const select_element = document.getElementById("games_filter");
+    const select_element = document.getElementById("game_filter");
 
     // add options to select element
     GAMES.forEach((game)=> {
@@ -148,4 +142,74 @@ function filterSalesTableRows(filter = "")
     for (var i = 0; i < show_rows.length; i++) {
         show_rows[i].style.display = "";
     }
+
+
+    createPriceChart(filter.substring(5));
+}
+
+
+function createPriceChart(filter)
+{
+    if (filter == "") {
+        document.getElementById("sale_history").innerHTML = "";
+        return;
+    }
+
+
+    var sale_history_data = getSaleDates(filter);
+
+
+    var dataTable = new google.visualization.DataTable();
+    dataTable.addColumn({ type: 'date', id: 'Date' });
+    dataTable.addColumn({ type: 'number', id: 'Price' });
+    dataTable.addRows(sale_history_data.dates);
+
+
+    var options = {
+        title: "Sale History",
+        colorAxis: {
+            minValue: 0,
+            maxValue: sale_history_data.max_price
+        }
+    };
+
+
+    var chart = new google.visualization.Calendar(document.getElementById('sale_history'));
+    chart.draw(dataTable, options);
+}
+
+
+function getSaleDates(game)
+{
+    const SALE_DATES = [];
+    var max_price = 0;
+
+    QUERY_RESULT.forEach((row)=>{
+        if (row.name.v == game) {
+            var start_date = new Date(Date.parse(row.start_date.f));
+            const end_date = new Date(Date.parse(row.end_date.f));
+
+
+            var loop = 0;
+            while (start_date <= end_date && loop < 15)
+            {
+                loop++;
+
+                SALE_DATES.push([new Date(start_date),  row.sale_price.v]);
+
+                start_date.setDate(start_date.getDate() + 1);
+            }
+            
+
+            if (row.price.v > max_price)
+                max_price = row.price.v;
+        }
+    })
+
+    console.log(SALE_DATES);
+    
+    return {
+        ['dates']: SALE_DATES,
+        ['max_price']: max_price
+    };
 }

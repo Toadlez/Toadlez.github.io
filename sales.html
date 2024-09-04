@@ -4,6 +4,10 @@
 
 <head>
     <title>Sales Tracker</title>
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script src="js/sales.js"></script>
 </head>
 
@@ -11,9 +15,15 @@
 
 
 <!-- GAMES FILTER -->
-<select id="games_filter">
+<select id="game_filter">
     <option value="">Show All Games</option>
 </select>
+
+
+<!-- GAME STATS -->
+<div id="game_stats">
+    <div id="sale_history" style="width: 1000px;"></div>
+</div>
 
 
 <!-- SALES TABLE -->
@@ -34,9 +44,7 @@
         </tr>
     </thead>
 
-    <tbody id="sales_body">
-
-    </tbody>
+    <tbody id="sales_body"></tbody>
 </table>
 
 
