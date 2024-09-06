@@ -1,0 +1,41 @@
+:root {
+    --white: #fdffff;
+    --dark-gray: #312f27;
+    --light-gray: #efefef;
+}
+
+html {
+    font-family: Open Sans;
+}
+
+table#sales {
+    margin: 10px 0px;
+
+    max-width: 100vw;
+    overflow-x: scroll;
+
+    border-collapse: collapse;
+}
+
+table#sales th {
+    padding: 5px 8px;
+
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+table#sales th:first-child {
+    border-radius: 5px 0px 0px 0px;
+}
+
+table#sales th:last-child {
+    border-radius: 0px 5px 0px 0px;
+}
+
+table#sales td {
+    padding: 5px 8px;
+}
+
+table#sales tr {
+    border-bottom: solid var(--light-gray) 2px;
+}
