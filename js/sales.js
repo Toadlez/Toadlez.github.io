@@ -166,7 +166,7 @@ function createPriceChart(filter)
 
 
     var options = {
-        title: "Sale History",
+        title: filter + ": Sale History",
         colorAxis: {
             minValue: 0,
             maxValue: sale_history_data.max_price
@@ -210,6 +210,6 @@ function getSaleDates(game)
     
     return {
         ['dates']: SALE_DATES,
-        ['max_price']: max_price
+        ['max_price']: max_price,
     };
 }
