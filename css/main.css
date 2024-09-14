@@ -1,0 +1,137 @@
+:root {
+    --green: #a7d9af;
+    --brown: #967D69;
+    --black: #292F36;
+    --white: white;
+    --blue: #9AC4F8;
+    --purple: #7776BC;
+    --yellow: #FFC53A;
+}
+
+
+@font-face {
+    font-family: 'VarelaRound-Regular';
+    src: url('../fonts/VarelaRound-Regular.ttf');
+}
+
+
+html {
+    background-color: var(--black);
+    color: var(--white);
+
+    font-family: "VarelaRound-Regular";
+
+    font-size: 20px;
+}
+
+
+body {
+    margin: 0px;
+}
+
+
+div#nav {
+    width: calc(100vw - 40px);
+
+    padding: 20px;
+
+    border-bottom: dotted white 1px;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    font-size: 20px;
+}
+
+
+div#nav-links {
+    float: right;
+}
+
+
+div#nav-links a {
+    padding: 0px 10px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.1s;
+}
+
+
+div#nav-links a:hover, div#nav-links a.active {
+    color: var(--green);
+}
+
+
+div#nav-links a:hover {
+    border-bottom: dotted var(--green) 1px;
+}
+
+
+div.pad {
+    max-width: 1250px;
+
+    margin: 20px;
+    padding: 15px 10px;
+
+    text-align: left;
+
+    border-radius: 3px;
+}
+
+
+div.pad.green {
+    border: solid var(--green) 1px;
+}
+
+
+div.pad.blue {
+    border: solid var(--blue) 1px;
+}
+
+
+div.pad.purple {
+    border: solid var(--purple) 1px;
+}
+
+
+div.pad.yellow {
+    border: solid var(--yellow) 1px;
+}
+
+
+div.pad a {
+    padding: 0px 4px;
+    
+    color: var(--green);
+
+    border-bottom: solid var(--green) 1px;
+    border-radius: 2px;
+
+    text-decoration: none;
+
+    transition: 0.1s;
+}
+
+
+div.pad a:hover {
+    padding: 0px 5px;
+
+    background-color: var(--green);
+    color: var(--black);
+
+    border-radius: 3px;
+}
+
+
+div.pad a.yellow {
+    color: var(--yellow);
+    border-bottom: solid var(--yellow) 1px;
+}
+
+
+div.pad a.yellow:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}

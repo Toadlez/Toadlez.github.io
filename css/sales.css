@@ -9,12 +9,15 @@ html {
 }
 
 
+html, body {
+    margin: 0;
+}
+
+
 table#sales {
-    margin: 10px 0px;
+    margin: 10px 10px;
 
     border-collapse: collapse;
-
-    border-bottom: solid var(--dark-gray) 5px;
 }
 
 table#sales th {
@@ -43,8 +46,20 @@ table#sales tr td {
     border-bottom: solid var(--light-gray) 2px;
 }
 
+table#sales tr#footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+
+    font-size: 14px;
+}
+
+table#sales tr#footer a {
+    color: var(--white);
+}
+
 
 select {
+    margin: 10px;
     padding: 4px;
 
     border-radius: 5px;
