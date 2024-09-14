@@ -257,12 +257,12 @@ function getSaleDatesAll()
         {
             loop++;
 
-            if (SALE_DATES_COUNTER[new Date(start_date)] != null)
-                SALE_DATES_COUNTER[new Date(start_date)]++;
-            else
-                SALE_DATES_COUNTER[new Date(start_date)] = 1;
+            var date_key = start_date.toISOString().split('T')[0];
 
-            SALE_DATES.push([new Date(start_date),  row.sale_price.v]);
+            if (SALE_DATES_COUNTER[date_key] != null)
+                SALE_DATES_COUNTER[date_key]++;
+            else
+                SALE_DATES_COUNTER[date_key] = 1;
 
             start_date.setDate(start_date.getDate() + 1);
         }
