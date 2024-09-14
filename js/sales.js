@@ -52,6 +52,7 @@ function init()
 
         addSalesTableRows(QUERY_RESULT);
         addFilterOptions(QUERY_RESULT);
+        createPriceChartAll();
     })
 }
 
@@ -151,7 +152,7 @@ function filterSalesTableRows(filter = "")
 function createPriceChart(filter)
 {
     if (filter == "") {
-        document.getElementById("sale_history").innerHTML = "";
+        createPriceChartAll();
         return;
     }
 
@@ -170,6 +171,32 @@ function createPriceChart(filter)
         colorAxis: {
             minValue: 0,
             maxValue: sale_history_data.max_price
+        }
+    };
+
+
+    var chart = new google.visualization.Calendar(document.getElementById('sale_history'));
+    chart.draw(dataTable, options);
+}
+
+
+function createPriceChartAll()
+{
+    var sale_history_data = getSaleDatesAll();
+
+
+    var dataTable = new google.visualization.DataTable();
+    dataTable.addColumn({ type: 'date', id: 'Date' });
+    dataTable.addColumn({ type: 'number', id: '# Sales' });
+    dataTable.addRows(sale_history_data.dates);
+
+
+    var options = {
+        title: "Overall Sale History",
+        colorAxis: {
+            minValue: 0,
+            maxValue: sale_history_data.max_price,
+            colors: ['#e9f547', '#f57347', '#e33434', '#de47f5']
         }
     };
 
@@ -211,5 +238,51 @@ function getSaleDates(game)
     return {
         ['dates']: SALE_DATES,
         ['max_price']: max_price,
+    };
+}
+
+
+function getSaleDatesAll()
+{
+    var SALE_DATES_COUNTER = [];
+    const SALE_DATES = [];
+
+    QUERY_RESULT.forEach((row)=>{
+        var start_date = new Date(Date.parse(row.start_date.f));
+        const end_date = new Date(Date.parse(row.end_date.f));
+
+
+        var loop = 0;
+        while (start_date <= end_date && loop < 15)
+        {
+            loop++;
+
+            if (SALE_DATES_COUNTER[new Date(start_date)] != null)
+                SALE_DATES_COUNTER[new Date(start_date)]++;
+            else
+                SALE_DATES_COUNTER[new Date(start_date)] = 1;
+
+            start_date.setDate(start_date.getDate() + 1);
+        }
+    })
+
+
+    var max_count = 0;
+    var count = 0;
+    for (var date in SALE_DATES_COUNTER)
+    {
+        count = SALE_DATES_COUNTER[date];
+
+        SALE_DATES.push([new Date(date), count]);
+
+        if (count > max_count)
+            max_count = count;
+    }
+
+    console.log(SALE_DATES_COUNTER);
+    
+    return {
+        ['dates']: SALE_DATES,
+        ['max_price']: max_count,
     };
 }
