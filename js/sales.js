@@ -262,6 +262,8 @@ function getSaleDatesAll()
             else
                 SALE_DATES_COUNTER[new Date(start_date)] = 1;
 
+            SALE_DATES.push([new Date(start_date),  row.sale_price.v]);
+
             start_date.setDate(start_date.getDate() + 1);
         }
     })
