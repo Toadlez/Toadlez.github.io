@@ -41,6 +41,8 @@ function init()
             const ROW = {};
 
             if (!(main.c[1])) return;
+            if (!(main.c[6])) return;
+            if (!(main.c[7])) return;
 
             COLUMNS.forEach((col_name,i)=>{
                 ROW[col_name] = main.c[i];
