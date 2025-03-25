@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>toadley.space - fletch fest 2025</title>
+
+    <style>
+        :root {
+            --black: #0E131F;
+            --smoke: #dedac3;
+            --log: #885A5A;
+            --red: #D54936;
+            --orange: #D58936;
+            --yellow: #d5bd36;
+            --rock: #bbb9ac;
+        }
+
+        html, body {
+            margin: 0px;
+            background-color: #0E131F;
+            color: var(--yellow);
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            color: var(--log);
+        }
+
+        #title {
+            position: absolute;
+        }
+
+        h1 {
+            z-index: 1;
+            position: absolute;
+            right: -3em;
+            display: inline-block;
+            width: 6em;
+            padding: 0.25em;
+            border-radius: 20px;
+            background-color: var(--smoke);
+            color: var(--log);
+            font-size: 2.5em;
+            transform: skew(2deg, -2deg);
+
+            animation: toast ease-in-out 8s alternate infinite;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+        }
+
+        div.stick {
+            z-index: 0;
+            position: absolute;
+            right: -11em;
+            bottom: -26.5em;
+            width: 400em;
+            height: 3.5em;
+            background-color: var(--log);
+            border-radius: 10px;
+            transform: skew(5deg, -5deg);
+        }
+
+        div.mallow {
+            position: absolute;
+            
+            animation: lower ease-in-out 8s alternate infinite;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+
+            &:has(div:hover) {
+                animation-play-state: running;
+
+                & h1 {
+                    animation-play-state: running;
+                }
+            }
+        }
+
+        @keyframes lower {
+            0% {top: 0em;}
+            100% {top: 50em;}
+        }
+
+        @keyframes toast {
+            0% {background-color: var(--smoke); color: var(--log);}
+            90% {background-color: #ba9d77; color: var(--black);}
+            100% {background-color: #17140f; color: var(--smoke);}
+        }
+
+        h2 {
+            color: var(--orange);
+            font-size: 2em;
+        }
+
+        p {
+            color: var(--log);
+            font-size: 1.5em;
+        }
+
+        ul {
+            padding: 0;
+
+            background-image: linear-gradient(var(--yellow), var(--orange), var(--red));
+            color: transparent;
+            background-clip: text;
+        }
+
+        li {
+            list-style: none;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 1.5em;
+            text-align: center;
+
+            &:not(.maggie) {
+                letter-spacing: 1em;
+
+                transition: 10s;
+
+                &:hover {
+                    transition: 0.1s;
+                    letter-spacing: 0.2em;
+                }
+            }
+            
+        }
+
+        li.maggie {
+            position: relative;
+            color: var(--red);
+
+            & div {
+                padding-left: 1px;
+                background-color: #0E131F;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<center>
+
+<img src="../assets/images/fletchfest_camping_party.png">
+<a href="../assets/images/fletchfest_camping_party.png" target="_blank">(open image in a new tab)</a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<span id="title">
+    <div class="mallow">
+        <h1>fletch<br>fest<br>camping<br>party</h1>
+        <div class="stick"></div>
+    </div>
+    
+</span>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<ul>
+    <li>ri</li>
+    <li>eden</li>
+    <li>jinx</li>
+    <li>toad</li>
+    <li>achie</li>
+    <li>fable</li>
+    <li>jisca</li>
+    <li>manon</li>
+    <li>zoggga</li>
+    <li>dyamode</li>
+    <li>sukkoyf</li>
+    <li>sukkoyf</li>
+    <li>kaiotisk</li>
+    <li>midluuna</li>
+    <li>sgtspice</li>
+    <li>sillelil</li>
+    <li>vildravn</li>
+    <li>booweczka</li>
+    <li>mossypine</li>
+    <li>melosprout</li>
+    <li>rob haines</li>
+    <li>stuffbyrae</li>
+    <li>artbyzvesta</li>
+    <li>fletchmakes</li>
+    <li>raindrinker</li>
+    <li>sorensprout</li>
+    <li>faenygma_mutt</li>
+    <li>splashinkling</li>
+    <li>cardboard moon</li>
+    <li>turd boomerang</li>
+    <li>artrex artworks</li>
+    <li>honeyfieldnotes</li>
+    <li>LEMONPOPPYSEEDGAMES</li>
+    <li>neosweatherstation's weather station</li>
+    <li class="maggie">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm<div style="position: absolute; right: 0px; top: 0px;">maggie<div></li>
+</ul>
+
+<p>(there were so many people i missed, i feel really bad)</p>
+<p>(if you're not in this image, please feel free to reach out if you want a lil doodle <3)</p>
+<p style="color: var(--rock); word-spacing: 2em;">art drawn by toad 2025</p>
+
+
+</center>
+</body>
+
+</html>
