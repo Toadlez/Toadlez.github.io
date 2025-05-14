@@ -1,0 +1,33 @@
+header {
+    position: sticky;
+    top: 0;
+
+    background-color: map-get($colors, bg-transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: solid map-get($colors, accent) 1px;
+    padding-top: $padding * 2 !important;
+    margin-bottom: $padding * 3;
+
+    &>.wrapper {
+        display: flex;
+        gap: $padding;
+
+        &>* {
+            flex: 1 1 0px;
+        }
+
+        &>a {
+            color: map-get($colors, fg);
+            text-align: left;
+
+            &:hover {}
+        }
+
+        &>nav {
+            display: flex;
+            justify-content: space-between;
+            gap: $padding;
+            width: 100%;
+        }
+    }
+}

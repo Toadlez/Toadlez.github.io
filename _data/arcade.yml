@@ -1,0 +1,67 @@
+- title: Goreticulture
+  links:
+    <a href="https://gammagames.itch.io/goreticulture/" target="_blank" class="itch">itch.io</a>
+  description:
+    <p>In <b>Goreticulture</b>, you’re tasked with cleaning up the bloody messes <i>someone else</i> left behind. But your trusty mop and bucket aren’t alone! Nurture a visceral garden of helpful plants, like the cleaning-fruit bearing Tri-Ivy or the blood detecting Compass Rose, to clean up this mess under budget.</p>
+  img: assets/images/goreticulture.png
+  img_alt: "Cover art for Goreticulture, featuring the game's intimidating logo over a bloody scene. There's some cleaning supplies, as well as vibrant flowers growing out of the blood."
+
+- title: Reel-istic Fishing
+  links:
+    <a href="https://toadleyundercontrol.itch.io/reelisticfishing/" target="_blank" class="itch">itch.io</a>
+    <a href="https://play.date/games/reel-istic-fishing/\" target="_blank" class="catalog">catalog</a>
+  description:
+    <p>Hook, harpoon, and sell fish to venture deeper into the sea! An homage to Ridiculous Fishing, with plenty of spins to keep it fresh and different.</p>
+    <b>2023 Playdate Community Awards:</b>
+    <b>🥇 Game Of The Year!</b>
+    <b>🥇 Accomplishment in Accessibility!</b>
+    <b>🥇 Best Launch Experience! </b>
+  img: assets/images/rf_web_billboard.png
+  img_alt: Cover art for Reel-istic Fishing, featuring a boat harpooning fish that are falling from the sky.
+
+- title: Quizzical
+  links:
+    <a href="https://toadleyundercontrol.itch.io/quizzical/" target="_blank" class="itch">itch.io</a>
+    <a href="https://play.date/games/quizzical/" target="_blank" class="catalog">catalog</a>
+  description:
+    <p>A casual-paced score chaser for Playdate, where your goal is to memorize a textbook full of nonsense, and spit that information back out to pass a quiz! Randomly generated text blurbs, charts, and tables means infinite... "learning"?</p>
+    <p>Made for PlayJam 5!</p>
+  img: assets/images/q_web_billboard_tilted.png
+  img_alt: Cover art for Quizzical, featuring a fancy photo frame with the logo in the center. The logo is styled like a dictionary definition, with the description "causing a mild amusement because of its oddness or strangeness".
+
+- title: Dragon Flagon
+  links:
+    <a href="https://toadleyundercontrol.itch.io/dragon-flagon" target="_blank" class="itch">itch.io</a>
+  description:
+    <p>A casual-paced high score chaser for Playdate! Play as Frosty the friendly dragon bartender, and prepare and serve ice cream floats to customers!</p>
+    <p>Made for the Uncrank'd Jam, alongside Brad Backofen, Ash Ouellette, and Rupert Cole!</p>
+  img: assets/images/drag.png
+  img_alt: Cover art for Dragon Flagon, featuring a friendly looking dragon bartender.
+
+- title: Poser
+  links:
+    <a href="https://toadleyundercontrol.itch.io/poser" target="_blank" class="itch">itch.io</a>
+  description:
+    <p>Choose from a wide range of eyes, eyebrows, and mouths, and pose your Playdate for a picture!</p>
+    <p>Created with Gamma!</p>
+  img: assets/images/poser.png
+  img_alt: Cover art for Poser. The logo "poser" is styled to look like a face.
+
+- title: Digscovery
+  links:
+    <a href="https://toadleyundercontrol.itch.io/digscovery" target="_blank" class="itch">itch.io</a>
+  description:
+    <p>An artifact is just out of sight... why not dig for it! A satisfying game that has you digging, rinsing, chiseling, and brushing various fossils!</p>
+    <p>Winner of PlayJam 3!</p>
+  img: assets/images/dig.png
+  img_alt: Cover art for Digscovery, featuring the logo and a silhouetted scene of a desert with bones, cacti, and a water tower.
+
+- title: Trick QR Treat
+  links:
+    <a href="https://toadleyundercontrol.itch.io/trick-qr-treat" target="_blank" class="itch">itch.io</a>
+  description:
+    <p>Go door-to-door trick or treating! But wait... is everyone... QR codes?!</p>
+    <p><i>Should we scan them..?</i></p>
+    <p>Made for PlayJam 6!</p>
+  img: assets/images/trick-qr-treat.png
+  img_alt: Logo for Trick QR Treat, styled to look like a QR code.

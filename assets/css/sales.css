@@ -1,0 +1,69 @@
+:root {
+    --white: #fdffff;
+    --dark-gray: #312f27;
+    --light-gray: #efefef;
+}
+
+html {
+    font-family: Open Sans;
+}
+
+
+html, body {
+    margin: 0;
+}
+
+
+table#sales {
+    margin: 10px 10px;
+
+    border-collapse: collapse;
+}
+
+table#sales th {
+    position: sticky;
+    top: 0;
+
+    padding: 5px 8px;
+
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+table#sales th:first-child {
+    border-radius: 5px 0px 0px 0px;
+}
+
+table#sales th:last-child {
+    border-radius: 0px 5px 0px 0px;
+}
+
+table#sales td {
+    padding: 5px 8px;
+}
+
+table#sales tr td {
+    border-bottom: solid var(--light-gray) 2px;
+}
+
+table#sales tr#footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+
+    font-size: 14px;
+}
+
+table#sales tr#footer a {
+    color: var(--white);
+}
+
+
+select {
+    margin: 10px;
+    padding: 4px;
+
+    border-radius: 5px;
+
+    font-family: Open Sans;
+    font-size: 16px;
+}

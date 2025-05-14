@@ -1,0 +1,112 @@
+---
+layout: basic-page
+title: gallery
+permalink: /gallery/
+---
+
+<script>
+
+function close_modal(that) {
+    that.parentNode.style.display = "none";
+}
+
+</script>
+
+
+<p style="color: orange; font-weight: bold;">UNDER CONSTRUCTION!!</p>
+<p style="margin-bottom: 50px; color: orange; font-style: italic;">Currently in the process of remaking my site with Jekyll! It's mostly finished, but I have quite a bit more art to add below.</p>
+
+
+<div class="art-table-container">
+
+<table class="art-table">
+    <thead>
+        <tr>
+            <th colspan="100%"><h2>Commissions</h2></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in site.data.gallery %}
+            {% if item.group == "commission" %}
+                {% include art-row.html
+                    title=item.title
+                    date=item.date
+                    img=item.img
+                    img_alt=item.img_alt
+                    img_cap=item.img_cap
+                %}
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<table class="art-table">
+    <thead>
+        <tr>
+            <th colspan="100%"><h2>Personal</h2></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in site.data.gallery %}
+            {% if item.group == "personal" %}
+                {% include art-row.html
+                    title=item.title
+                    date=item.date
+                    img=item.img
+                    img_alt=item.img_alt
+                    img_cap=item.img_cap
+                %}
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<table class="art-table">
+    <thead>
+        <tr>
+            <th colspan="100%"><h2>Fan Art</h2></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in site.data.gallery %}
+            {% if item.group == "fanart" %}
+                {% include art-row.html
+                    title=item.title
+                    date=item.date
+                    img=item.img
+                    img_alt=item.img_alt
+                    img_cap=item.img_cap
+                %}
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<table class="art-table">
+    <thead>
+        <tr>
+            <th colspan="100%"><h2>Friends/Family</h2></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in site.data.gallery %}
+            {% if item.group == "friends" %}
+                {% include art-row.html
+                    title=item.title
+                    date=item.date
+                    img=item.img
+                    img_alt=item.img_alt
+                    img_cap=item.img_cap
+                %}
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+<p style="margin-top: 50px;">All works here were made without the use of generative AI.</p>
+<p>Most real images were taken from <a href="https://pdimagearchive.org/" target="_blank">Public Domain Image Archive</a>, and I'll do my best to credit each image under the artwork!</p>

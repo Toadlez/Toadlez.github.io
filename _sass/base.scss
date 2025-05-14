@@ -1,0 +1,253 @@
+@import 'vars';
+@import 'header';
+@import 'footer';
+
+body {
+    background: map-get($colors, bg);
+    color: map-get($colors, fg);
+    font-family: $default-font;
+    margin: 0;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &>* {
+        width: 100%;
+        max-width: 600px;
+        padding: $padding;
+        box-sizing: border-box;
+    }
+}
+
+main {}
+
+a {
+    color: map-get($colors, accent);
+    text-decoration: none;
+
+    &.itch {
+        color: #ff2b59;
+    }
+
+    &.catalog {
+        color: #ffce2b;
+    }
+
+    &.bsky {
+        color: #28b0ff;
+    }
+
+    &.instagram {
+        color: map-get($colors, fg);
+        background-image: linear-gradient(to right, #ee00de, #ffc500);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.game-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: $padding * 2;
+
+    margin-left: -$padding;
+    margin-right: -$padding;
+
+    >* {
+        padding-left: $padding;
+        padding-right: $padding;
+        border: solid map-get($colors, accent-transparent) 1px;
+    }
+
+    >:nth-child(even) {
+        background-color: map-get($colors, accent-transparent);
+    }
+}
+
+.game-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding-bottom: $padding;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $padding;
+
+    >* {
+        flex: 1 1 0px;
+        min-width: 280px;
+    }
+
+    >h2 {
+        flex: 1 1 auto;
+        width: 100%;
+        margin: 0px;
+        padding: $padding 0px;
+        border-bottom: solid map-get($colors, accent) 1px;
+
+        >a {
+            margin-left: $padding;
+            float: right;
+        }
+    }
+
+    >.game-description {
+        display: inline-grid;
+        height: min-content;
+        gap: $padding;
+
+        >* {
+            margin: 0;
+            height: max-content;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.art-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: $padding * 2;
+    
+    margin-left: -$padding;
+    margin-right: -$padding;
+
+    >:nth-child(even) {
+        background-color: map-get($colors, accent-transparent);
+    }
+}
+
+.art-table {
+    width: 100%;
+    border: solid map-get($colors, accent-transparent) 1px;
+    padding: $padding;
+
+    th {
+        border-bottom: solid map-get($colors, accent) 1px;
+        text-align: left;
+    }
+
+    th, td {
+        padding: $padding;
+    }
+
+    td {
+    }
+
+    thead {
+        tr {
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            >:first-child {
+                width: 40px;
+            }
+
+            >:last-child {
+                white-space: nowrap;
+                width: 1px;
+                max-width: max-content;
+            }
+        }
+    }
+
+    tbody>:nth-child(even) {
+        background-color: map-get($colors, accent-transparent);
+    }
+
+    tr {
+        
+    }
+
+    .open-button {
+        color: map-get($colors, accent);
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.image-modal {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: $padding * 4;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: map-get($colors, bg-transparent);
+    backdrop-filter: blur(2px);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    animation-name: blur-in;
+    animation-duration: 0.8s;
+
+    .close-button {
+        z-index: 200;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .middle {
+        z-index: 300;
+        flex: 0 0 auto;
+        min-width: none;
+        width: 100%;
+        max-width: 800px;
+        height: min-content;
+        min-height: 0px;
+
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+
+        >* {
+            width: 100%;
+        }
+
+        a {
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 1;
+
+            animation-name: fade-in;
+            animation-duration: 0.8s;
+        }
+    }
+
+    @keyframes fade-in {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes blur-in {
+        from {backdrop-filter: blur(0px);}
+        to {backdrop-filter: blur(2px);}
+    }
+}

@@ -1,0 +1,19 @@
+---
+layout: basic-page
+title: arcade
+permalink: /arcade/
+---
+
+<div class="game-card-list">
+
+{% for item in site.data.arcade %}
+    {% include game-card.html
+        title=item.title
+        links=item.links
+        description=item.description
+        img=item.img
+        img_alt=item.img_alt
+    %}
+{% endfor %}
+
+</div>

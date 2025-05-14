@@ -1,0 +1,19 @@
+<tr>
+    <td>
+        <div class="open-button" onclick="this.nextElementSibling.style.display = 'flex'">View</div>
+        <div class="image-modal" title="Close" style="display: none;">
+            <div class="close-button" onclick="close_modal(this)"></div>
+
+            <div class="middle">
+                <a href="../{{ include.img }}" target="_blank" title="Open in a new tab">
+                    <img src="../{{ include.img }}" alt="">
+                </a>
+                <div class="caption">{{ include.img_cap }}</div>
+            </div>
+        </div>
+    </td>
+    <td>{{ include.title }}</td>
+    <td>{{ include.date }}</td>
+</tr>
+
+
