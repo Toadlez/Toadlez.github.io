@@ -26,16 +26,30 @@ a {
     color: map-get($colors, accent);
     text-decoration: none;
 
+    transition: transform 0.05s;
+
     &.itch {
         color: #ff2b59;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
     }
 
     &.catalog {
         color: #ffce2b;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
     }
 
     &.bsky {
         color: #28b0ff;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
     }
 
     &.instagram {
@@ -45,6 +59,10 @@ a {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
     }
 }
 
@@ -60,6 +78,9 @@ a {
         padding-left: $padding;
         padding-right: $padding;
         border: solid map-get($colors, accent-transparent) 1px;
+    }
+
+    >:nth-child(odd) {
     }
 
     >:nth-child(even) {
