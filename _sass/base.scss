@@ -76,6 +76,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: $padding;
 
     >* {
@@ -110,6 +111,8 @@ a {
     img {
         width: 100%;
         height: auto;
+
+        background-color: map-get($colors, fg);
     }
 }
 
@@ -210,6 +213,7 @@ a {
         top: 0;
         width: 100%;
         height: 100%;
+        cursor: pointer;
     }
 
     .middle {
@@ -234,10 +238,42 @@ a {
 
         img {
             width: 100%;
-            aspect-ratio: 1;
+            height: auto;
 
             animation-name: fade-in;
             animation-duration: 0.8s;
+        }
+
+        .credits {
+            background-color: map-get($colors, accent-transparent);
+
+            summary {
+                margin: 0;
+                padding: $padding;
+                color: map-get($colors, accent);
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            ul {
+                margin: 0;
+                padding-left: $padding * 3;
+
+                li + li {
+                    margin-top: 8px;
+                }
+            }
+
+            &[open] {
+                padding: $padding;
+
+                summary {
+                    margin-bottom: $padding;
+                    padding: 0;
+                    padding-bottom: $padding;
+                    border-bottom: solid map-get($colors, accent) 1px;
+                }
+            }
         }
     }
 

@@ -13,10 +13,6 @@ function close_modal(that) {
 </script>
 
 
-<p style="color: orange; font-weight: bold;">UNDER CONSTRUCTION!!</p>
-<p style="margin-bottom: 50px; color: orange; font-style: italic;">Currently in the process of remaking my site with Jekyll! It's mostly finished, but I have quite a bit more art to add below.</p>
-
-
 <div class="art-table-container">
 
 <table class="art-table">
@@ -28,10 +24,12 @@ function close_modal(that) {
     <tbody>
         {% for item in site.data.gallery %}
             {% if item.group == "commission" %}
+                {% assign img_path = "assets/images/gallery/commission/" | append: item.img %}
+
                 {% include art-row.html
                     title=item.title
                     date=item.date
-                    img=item.img
+                    img=img_path
                     img_alt=item.img_alt
                     img_cap=item.img_cap
                 %}
@@ -50,10 +48,12 @@ function close_modal(that) {
     <tbody>
         {% for item in site.data.gallery %}
             {% if item.group == "personal" %}
+                {% assign img_path = "assets/images/gallery/personal/" | append: item.img %}
+
                 {% include art-row.html
                     title=item.title
                     date=item.date
-                    img=item.img
+                    img=img_path
                     img_alt=item.img_alt
                     img_cap=item.img_cap
                 %}
@@ -72,10 +72,12 @@ function close_modal(that) {
     <tbody>
         {% for item in site.data.gallery %}
             {% if item.group == "fanart" %}
+                {% assign img_path = "assets/images/gallery/fanart/" | append: item.img %}
+
                 {% include art-row.html
                     title=item.title
                     date=item.date
-                    img=item.img
+                    img=img_path
                     img_alt=item.img_alt
                     img_cap=item.img_cap
                 %}
@@ -94,10 +96,12 @@ function close_modal(that) {
     <tbody>
         {% for item in site.data.gallery %}
             {% if item.group == "friends" %}
+                {% assign img_path = "assets/images/gallery/friends/" | append: item.img %}
+
                 {% include art-row.html
                     title=item.title
                     date=item.date
-                    img=item.img
+                    img=img_path
                     img_alt=item.img_alt
                     img_cap=item.img_cap
                 %}

@@ -1,13 +1,13 @@
 <tr>
     <td>
         <div class="open-button" onclick="this.nextElementSibling.style.display = 'flex'">View</div>
-        <div class="image-modal" title="Close" style="display: none;">
+        <div class="image-modal" title="close image" style="display: none;">
             <div class="close-button" onclick="close_modal(this)"></div>
 
-            <div class="middle">
-                <a href="../{{ include.img }}" target="_blank" title="Open in a new tab">
+            <div class="middle" title="">
+                <b>{{ include.title }}</b>
                     <img src="../{{ include.img }}" alt="">
-                </a>
+                <center><a href="../{{ include.img }}" target="_blank">(open image in a new tab)</a></center>
                 <div class="caption">{{ include.img_cap }}</div>
             </div>
         </div>
