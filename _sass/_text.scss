@@ -1,0 +1,91 @@
+@use 'sass:color';
+
+.italic {
+    font-style: italic;
+}
+
+.faded {
+    opacity: 0.75;
+
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.shimmer {
+    background-image: linear-gradient(-30deg, #fcfcc0 45%, map-get($colors, fg) 50%, #fcfcc0 55%);
+    background-size: 300%;
+    color: map-get($colors, fg);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shimmer 12s infinite;
+}
+
+@keyframes shimmer {
+    0% {background-position-x: 100%;}
+    50% {background-position-x: 100%;}
+    100% {background-position-x: 0%;}
+}
+
+@keyframes gay {
+    0% {color: red;}
+    10% {color: orange;}
+    30% {color: yellow;}
+    50% {color: green;}
+    70% {color: blue;}
+    90% {color: purple;}
+    100% {color: red;}
+}
+
+a {
+    color: map-get($colors, accent);
+    text-decoration: none;
+
+    transition: transform 0.2s;
+
+    &.itch {
+        color: #ff2b59;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
+    }
+
+    &.catalog {
+        color: #ffce2b;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
+    }
+
+    &.bsky {
+        color: #28b0ff;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
+    }
+
+    &.instagram {
+        color: map-get($colors, fg);
+        background-image: linear-gradient(to right, #ee00de, #ffc500);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+            transform: rotate(-4deg);
+        }
+    }
+}
+
+p>a {
+    text-decoration: underline;
+}

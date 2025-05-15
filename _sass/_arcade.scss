@@ -1,0 +1,70 @@
+.game-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: $padding * 2;
+
+    margin-left: -$padding;
+    margin-right: -$padding;
+
+    >* {
+        padding-left: $padding;
+        padding-right: $padding;
+        border: solid map-get($colors, accent-transparent) 1px;
+    }
+
+    >:nth-child(odd) {
+    }
+
+    >:nth-child(even) {
+        background-color: map-get($colors, accent-transparent);
+    }
+}
+
+.game-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding-bottom: $padding;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: $padding;
+
+    >* {
+        flex: 1 1 0px;
+        min-width: 280px;
+    }
+
+    >h2 {
+        flex: 1 1 auto;
+        width: 100%;
+        margin: 0px;
+        padding: $padding 0px;
+        border-bottom: solid map-get($colors, accent) 1px;
+
+        >a {
+            margin-left: $padding;
+            float: right;
+        }
+    }
+
+    >.game-description {
+        display: inline-grid;
+        height: min-content;
+        gap: $padding;
+
+        >* {
+            margin: 0;
+            height: max-content;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+
+        background-color: map-get($colors, fg);
+    }
+}
