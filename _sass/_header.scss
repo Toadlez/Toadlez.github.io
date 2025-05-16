@@ -1,15 +1,11 @@
 header {
-    position: sticky;
-    top: 0;
-
-    background-color: map-get($colors, bg-transparent);
-    backdrop-filter: blur(8px);
     border-bottom: solid map-get($colors, accent) 1px;
-    padding-top: $padding * 2 !important;
+    padding-top: $padding * 4 !important;
     margin-bottom: $padding * 3;
 
     &>.wrapper {
         display: flex;
+        justify-content: space-between;
         gap: $padding;
 
         &>* {
@@ -17,10 +13,17 @@ header {
         }
 
         &>a {
+            max-width: max-content;
+            letter-spacing: 1px;
             color: map-get($colors, fg);
             text-align: left;
 
-            &:hover {}
+            transition: letter-spacing 0.2s, transform 0.2s;
+
+            &:hover {
+                letter-spacing: 5px;
+                transform: scale(1);
+            }
         }
 
         &>nav {

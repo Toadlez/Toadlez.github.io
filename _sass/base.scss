@@ -5,11 +5,25 @@
 @import 'arcade';
 @import 'gallery';
 
+html {
+    font-size: 1.1em;
+}
+
 body {
+    min-height: 100vh;
     background: map-get($colors, bg);
     color: map-get($colors, fg);
     font-family: $default-font;
     margin: 0;
+
+    $c1: #00361223;
+    $c2: #0000005e;
+
+    $opacity: 0.01;
+
+    background:
+        linear-gradient($c1, #25003627 calc(100% - 500px), $c2),
+        url('/assets/images/noise2.png');
 
     display: flex;
     flex-flow: column;

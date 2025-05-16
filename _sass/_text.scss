@@ -46,10 +46,22 @@ a {
     color: map-get($colors, accent);
     text-decoration: none;
 
+    background-image: linear-gradient(map-get($colors, accent), map-get($colors, accent) 45%, #2bfff4);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     transition: transform 0.2s;
 
     &.itch {
         color: #ff2b59;
+
+        background-image: linear-gradient(#ff2b59, #ff2b59 55%, #ff2bed);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         &:hover {
             transform: rotate(-4deg);
@@ -59,6 +71,12 @@ a {
     &.catalog {
         color: #ffce2b;
 
+        background-image: linear-gradient(#ffce2b, #ffce2b 55%, #ff392b);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         &:hover {
             transform: rotate(-4deg);
         }
@@ -66,6 +84,12 @@ a {
 
     &.bsky {
         color: #28b0ff;
+
+        background-image: linear-gradient(#28b0ff, #28b0ff 55%, #7a28ff);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         &:hover {
             transform: rotate(-4deg);
@@ -83,6 +107,10 @@ a {
         &:hover {
             transform: rotate(-4deg);
         }
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
 }
 
