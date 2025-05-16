@@ -13,7 +13,6 @@ header {
         }
 
         &>a {
-            max-width: max-content;
             letter-spacing: 1px;
             color: map-get($colors, fg);
             text-align: left;
