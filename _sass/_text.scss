@@ -64,7 +64,7 @@ a {
         -webkit-text-fill-color: transparent;
 
         &:hover {
-            transform: rotate(-4deg);
+            transform: rotate(0deg);
         }
     }
 
@@ -78,7 +78,7 @@ a {
         -webkit-text-fill-color: transparent;
 
         &:hover {
-            transform: rotate(-4deg);
+            transform: rotate(0deg);
         }
     }
 
@@ -92,7 +92,7 @@ a {
         -webkit-text-fill-color: transparent;
 
         &:hover {
-            transform: rotate(-4deg);
+            transform: rotate(0deg);
         }
     }
 
@@ -105,7 +105,21 @@ a {
         -webkit-text-fill-color: transparent;
 
         &:hover {
-            transform: rotate(-4deg);
+            transform: rotate(0deg);
+        }
+    }
+
+    &.discogs {
+        color: #ddf2f3;
+
+        background-image: linear-gradient(#ddf2f3, #ddf2f3 55%, #3e4b53);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+            transform: rotate(0deg);
         }
     }
 

@@ -36,3 +36,27 @@ body {
         box-sizing: border-box;
     }
 }
+
+.i88x31 {
+    margin-top: $padding * 6;
+
+    display: flex;
+    flex-flow: column;
+    gap: $padding * 2;
+
+
+    & div {
+        display: flex;
+        flex-flow: row;
+        gap: 5px;
+
+        & img {
+            image-rendering: pixelated;
+        }
+
+        & a:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}
