@@ -52,7 +52,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    transition: transform 0.2s;
+    transition: transform 0.1s;
 
     &.itch {
         color: #ff2b59;
@@ -62,10 +62,6 @@ a {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:hover {
-            transform: rotate(0deg);
-        }
     }
 
     &.catalog {
@@ -76,10 +72,6 @@ a {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:hover {
-            transform: rotate(0deg);
-        }
     }
 
     &.bsky {
@@ -90,10 +82,6 @@ a {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:hover {
-            transform: rotate(0deg);
-        }
     }
 
     &.instagram {
@@ -103,10 +91,6 @@ a {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:hover {
-            transform: rotate(0deg);
-        }
     }
 
     &.discogs {
@@ -117,10 +101,6 @@ a {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:hover {
-            transform: rotate(0deg);
-        }
     }
 
     &:hover {

@@ -1,43 +1,167 @@
-- title: Lolife Cover Art
+#region COMMISSION
+
+- title: <b>Fletch Makes Stuff</b> - Starting Soon
+  date: 2025
+  img: fletch-starting-soon.png
+  img_alt:
+    Digital artwork resembling paper. It's a stylized illustration of a town map, but animal/insect themed rather than human themed. The roads are shaped to look like a giant duck head!
+    Notable locations include a pond, a grassy field, a pine forest, and a beach.
+    Notable buildings include big colorful mushroom homes, a wizard tower, a treehouse, and a giant boot.
+    All across the town are animals and insects!
+  img_cap:
+    <p><a href="https://www.twitch.tv/fletchmakes">Fletch Makes Stuff</a> commissioned me to draw some artwork for his "Starting Soon" screen!</p>
+  group: commission
+
+- title: <b>Fletch Makes Stuff</b> - Please Stand By
+  date: 2025
+  img: fletch-please-stand-by.png
+  img_alt:
+    Digital artwork made to look like paper. It's styled to look like old 'PLEASE STAND BY' screens on televisions.
+    In the foreground is a bunch of white lines and lilypads, with a duck head in the middle. Below the duck is the words 'PLEASE STAND BY'. The background is a rainbow!
+  img_cap:
+    <p><a href="https://www.twitch.tv/fletchmakes">Fletch Makes Stuff</a> commissioned me to draw some artwork for his "Starting Soon" screen!</p>
+    <p>Originally this was going to be what I submitted, but I felt it was too simple. I ended up making the town map art instead, and including this as a bonus!</p>
+  group: commission
+
+- title: <b>Lolife</b> - Billboard Art
   date: 2025
   img: lolife-billboard.png
   img_alt: Cover art for the game Lolife. A knight is chasing sheep around a farm pen, trying to corral them all in. Everything is made of digital paper.
   img_cap:
-    <p>Catalog billboard art I made for Orkn's upcoming game <i>Lolife</i>!</p>
+    <p>Catalog billboard art I made for <a href="https://orangethief.co.uk/" target="blank">Orkn's</a> game, <a href="https://play.date/games/lolife/" target="blank"><i>Lolife</i></a>!</p>
   group: commission
 
-- title: Cinnamon Roll Snakes
+- title: <b>Lolife</b> - Wide Art (Castle)
   date: 2025
-  img: cinnamon-roll-snakes.png
-  img_alt: A couple of snakes that look like cinnamon rolls. Between them is text that says 'Cinnamon Snake - Daybreak snack, or snake attack? - Anguis Cinnamomum'.
+  img: lolife-wide.png
+  img_alt: Cover art for the game Lolife. A knight is up to another knight who is guarding a big castle. Everything is made of digital paper.
   img_cap:
-    <p>A couple of snakes that look like cinnamon rolls.</p>
-    <p>I made this after seeing a picture of Ogi's cinnamon rolls that reminded me of snakes!</p>
-  group: personal
+    <p>Catalog wide art I made for <a href="https://orangethief.co.uk/" target="blank">Orkn's</a> game, <a href="https://play.date/games/lolife/" target="blank"><i>Lolife</i></a>!</p>
+  group: commission
 
-- title: Genderfluidity
+- title: <b>Lolife</b> - Wide Art (Field)
   date: 2025
-  img: genderfluidity.png
-  img_alt: A rainbow pitcher pouring liquid. The liquid is colored to look like the genderfluid flag.
+  img: lolife-wide-alt.png
+  img_alt: Cover art for the game Lolife. A knight is chasing sheep. Everything is made of digital paper.
   img_cap:
-    <p>A rainbow pitcher pouring genderfluid out onto the world!</p>
-  group: personal
+    <p>Catalog wide art I made for <a href="https://orangethief.co.uk/" target="blank">Orkn's</a> game, <a href="https://play.date/games/lolife/" target="blank"><i>Lolife</i></a>!</p>
+    <p>This is an alternate version of the wide art!</p>
+  group: commission
 
-- title: Transfluidity
+- title: <b>Lolife</b> - Small Art
   date: 2025
-  img: transfluidity.png
-  img_alt: A rainbow pitcher pouring liquid. The liquid is colored to look like the transgender flag.
+  img: lolife-small.png
+  img_alt: Cover art for the game Lolife. A knight is chasing sheep around a farm pen, trying to corral them all in. Everything is made of digital paper.
   img_cap:
-    <p>A rainbow pitcher pouring trans genderfluid out onto the world!</p>
-  group: personal
+    <p>Catalog billboard art I made for <a href="https://orangethief.co.uk/" target="blank">Orkn's</a> game, <a href="https://play.date/games/lolife/" target="blank"><i>Lolife</i></a>!</p>
+  group: commission
 
-- title: Brain
+- title: <b>Lolife</b> - Album Art
   date: 2025
-  img: brain.png
-  img_alt: Artwork of a human head with a neon brain inside. Intense light beams from outside are chipping away at the head and entering it. The brain is slightly rotting due to the beams.
+  img: lolife-ost.png
+  img_alt: Album art for the game Lolife. A knight is chasing sheep around a farm pen, trying to corral them all in. At the bottom of the black frame are the words 'Original Soundtrack'. Everything is made of digital paper.
   img_cap:
-    <p>Artwork of a human head with a neon brain inside. Intense light beams from outside are chipping away at the head and entering it. The brain is slightly rotting due to the beams.</p>
-  group: personal
+    <p>Album art I made for <a href="https://orangethief.co.uk/" target="blank">Orkn's</a> game, <a href="https://play.date/games/lolife/" target="blank"><i>Lolife</i></a>!</p>
+    <p>The amazing original soundtrack was composed by <a href="https://jamesgameboy.bandcamp.com/" target="blank">James Gameboy</a>, and you can buy it at <a href="https://jamesgameboy.bandcamp.com/album/lolife-original-soundtrack/" target="blank">https://jamesgameboy.bandcamp.com/album/lolife-original-soundtrack/</a>!</p>
+    <p>There's also a <a href="https://james-gameboy.itch.io/lolife-original-score-pulp-score-app/" target="blank">musical companion app</a>!</p>
+  group: commission
+
+# endregion
+
+#region FANART
+
+- title: <b>DELTARUNE</b> - Elnina & Lanino
+  date: 2025
+  img: rain-n-shine.png
+  img_alt:
+    Cartoonish Deltarune fan art depicting Elnina and Lanino facing eachother, sitting on walls of water and fire respectively. In the background is a sky full of stars, constellations, and a rainbow.
+    Elnina is wearing a dress that resembles an umbrella, and yellow rain boots. She is a humanoid sheep with fluffy blue hair. She's producing a wall of water with her wand.
+    Lanino is wearing a flaming suit and dress shoes. He is a humanoid moon with short, combed-back hair. He's producing a wall of fire with his wand.
+    In the sky behind them are three constellations featuring a sheep, a moon, and a heart.
+  img_cap:
+    <p>Elnina & Lanino fan art I made for Toby Fox's game, <i>DELTARUNE</i></p>
+    <p>These are easily my favorite enemies in the game <3</p>
+  group: fanart
+
+- title: <b>ANOTHEREAL</b> - Astra
+  date: 2025
+  img: astra.png
+  img_alt: An anxious portrait of a girl with a dark void body, and glowing white hair. She has a scribbled halo, bright glowing orange eyes, and her hair is cracking like an egg shell. She is saying 'What... am I??'.
+  img_cap:
+    <p>Astra fan art I made for Lena Raine's game, <a href="https://store.steampowered.com/app/2895500/ANOTHEREAL/"><i>ANOTHEREAL</i></a></p>
+  group: fanart
+
+- title: <b>Gary & Linda</b> - Optical Illusions
+  date: 2025
+  img: gary-and-linda.png
+  img_alt: Two people who are made of cassette tape are standing beside eachother, holding mugs. Behind their heads is a giant cassette tape. In the background is the track list for an album.
+  img_cap:
+    <p>Gary and Linda's "Optical Illusions" is one of my favorite albums ever <3</p>
+    <p>I love the cover art for it, and wanted to make something inspired by it that incorporated a cassette tape.</p>
+  group: fanart
+
+- title: <b>XTRIS</b> - Frog
+  date: 2025
+  img: xtris-frog.png
+  img_alt: A papercraft frog on a popsicle stick, suspended above paper flames. Behind the frog is a game board.
+  img_cap:
+    <p>Fan art for XTRIS, featuring the adorable frog character!</p>
+  group: fanart
+
+- title: <b>XTRIS</b> - Player
+  date: 2025
+  img: xtris-player.png
+  img_alt: A papercraft square person on a popsicle stick, suspended above paper flames. The square person is visibly worried. Behind the square person is a game board.
+  img_cap:
+    <p>Fan art for XTRIS, featuring the adorable square character (squaracter?)!</p>
+  group: fanart
+
+- title: <b>Mudborne</b>
+  date: 2025
+  img: mudborne.png
+  img_alt: Digital papercraft artwork of a humanoid frog on a pier, looking across the water at a frog frog. They both have dark blue reflections in the water, and the reflections have glowing white eyes.
+  img_cap:
+    <p>I made this fanart after enjoying the hell out of playing Mudborne!!</p>
+  group: fanart
+
+- title: <b>Hylics</b> - Wayne
+  date: 2025
+  img: hylics-wayne.png
+  img_alt: A portrait of a person with a moon-shaped head. Their skin and face is melting off to reveal their skeleton.
+  img_cap:
+    <p>Hell yeah, Wayne art.</p>
+  group: fanart
+
+- title: <b>Cheekface</b> - Middle Spoon
+  date: 2025
+  img: cf-middle-spoon.png
+  img_alt: Mixed media album art recreation featuring a pigeon eating fries off the road. 'CHEEKFACE' is written in graffiti above the bird. The whole image is textured with bird poop, checkerboards, and coffee stains.
+  img_cap:
+    <p>Mixed media recreation of the cover art for Cheekface's "Middle Spoon."</p>
+    <details class="credits">
+      <summary>Credits</summary>
+      <ul>
+        <li>Original cover art by Amanda Tannen!</li>
+        <li><a href="https://cheekface.bandcamp.com" target="_blank">Cheekface</a></li>
+      </ul>
+    </details>
+  group: fanart
+
+- title: <b>Fort Frances</b> - We Will Stop Time
+  date: 2025
+  img: ff.png
+  img_alt: Mixed media album art recreation using a collage of public domain images. Notable features include a candle, a reaper, an hourglass, and a clock hand.
+  img_cap:
+    <p>Mixed media recreation of the cover art for Fort Frances' "We Will Stop Time."</p>
+    <details class="credits">
+      <summary>Credits</summary>
+      <ul>
+        <li>Original cover art by <a href="https://www.nonoflores.com/" target="blank">NoNo</a>!</li>
+        <li><a href="https://www.fortfrancesmusic.com/" target="_blank">Fort Frances</a></li>
+        <li><a href="https://pdimagearchive.org//" target="_blank">All images taken from the Public Domain Image Archive</a></li>
+      </ul>
+    </details>
+  group: fanart
 
 - title: <b>Dr. Dog</b> - Abandoned Mansion
   date: 2025
@@ -134,6 +258,10 @@
     <p>A papercraft / mixed-media recreation of Nini from the game <a href="https://store.steampowered.com/app/2871440/Squeakross_Home_Squeak_Home/" target="_blank">Squeakross</a>!</p>
   group: fanart
 
+#endregion
+
+#region FRIENDS
+
 - title: Sleepy Pond
   date: 2025
   img: sleepy-pond.png
@@ -177,3 +305,93 @@
         </ul>
     </details>
   group: friends
+
+#endregion
+
+#region PERSONAL
+
+- title: IKJWWWEEWS
+  date: 2025
+  img: easy-button.png
+  img_alt:
+    A giant red button that says 'i kinda just went with what everyone else was saying.' A little frog is pressing it with its massive hand-shaped tongue. The tongue is dripping saliva on the button.
+  img_cap:
+    <p>I threw this together as a joke and it was fun!</p>
+  group: personal
+
+- title: <b>Dialup</b> - Love
+  date: 2025
+  img: dialup-love.png
+  img_alt:
+    A picture of two computer beings lounging in the sky. There are three layers to this picture, and the top two layers are shattered into pieces, revealing lower layers.
+    The computer beings are composed of monitors, telephones, and phone lines. Their heads are connected by a stringy green substance.
+    A heart sits between the beings.
+    The lowest layer represents the future. Each being's head is displayed, cracked and dead.
+  img_cap:
+    <p>I don't really have a reason for making this art! I made the other three dialup arts, and thought it'd be cool to make something new using all three!</p>
+    <p>My interpretation of it is long-distance friendships and relationships! Friends that we may only ever know through a computer.</p>
+    <p>Maybe there's even a component of fragility to it with the cracks n stuff? Like how, besides death, there are so many ways to lose contact with online friends. Your internet could go out, your computer could be destroyed, etc.</p>
+  group: personal
+
+- title: <b>Dialup</b> - Dialup
+  date: 2025
+  img: dialup.png
+  img_alt:
+    A colorful picture representing a dialup network connection. Two computers are connected by a string of telephones and phone lines. Everything stands above fluffy clouds.
+  img_cap:
+    <p>This is the first picture I worked on in this dialup series! I never personally got to use dialup, but I love the icons/art surrounding dialup, and wanted to remake that!</p>
+    <p>I only set out to make this one picture, but had so much fun that it got out of hand and I made 3 variations on this haha</p>
+  group: personal
+
+- title: <b>Dialup</b> - Wireless
+  date: 2025
+  img: dialup-wireless.png
+  img_alt:
+    A blue picture representing a wireless network connection. Two computers are connected by stringy green substance. The telephones and phone lines from the previous picture are out of commission and degrading. Everything stands above fluffy clouds.
+  img_cap:
+    <p>This dialup artwork is meant to show how internet connection has evolved to be faster and often wireless. The dialup tech is still intact, but wires have been cut, and things are slipping away. Most of it is just e-waste now.</p>
+  group: personal
+
+- title: <b>Dialup</b> - Extinction
+  date: 2025
+  img: dialup-extinction.png
+  img_alt:
+    A bleak, gray picture representing the same computers, telephones, and phone lines from the previous pictures. Everything is tilted and sinking into the clouds, the wires have snapped, a telephone is slipping off of its podium. The computers are broken and their screens are cracked.
+  img_cap:
+    <p>This dialup artwork is meant to show that when we are gone, all of this tech will still be here for so many years. For better or worse, it will outlive us.</p>
+  group: personal
+
+- title: Cinnamon Roll Snakes
+  date: 2025
+  img: cinnamon-roll-snakes.png
+  img_alt: A couple of snakes that look like cinnamon rolls. Between them is text that says 'Cinnamon Snake - Daybreak snack, or snake attack? - Anguis Cinnamomum'.
+  img_cap:
+    <p>A couple of snakes that look like cinnamon rolls.</p>
+    <p>I made this after seeing a picture of Ogi's cinnamon rolls that reminded me of snakes!</p>
+  group: personal
+
+- title: Genderfluidity
+  date: 2025
+  img: genderfluidity.png
+  img_alt: A rainbow pitcher pouring liquid. The liquid is colored to look like the genderfluid flag.
+  img_cap:
+    <p>A rainbow pitcher pouring genderfluid out onto the world!</p>
+  group: personal
+
+- title: Transfluidity
+  date: 2025
+  img: transfluidity.png
+  img_alt: A rainbow pitcher pouring liquid. The liquid is colored to look like the transgender flag.
+  img_cap:
+    <p>A rainbow pitcher pouring trans genderfluid out onto the world!</p>
+  group: personal
+
+- title: Brain
+  date: 2025
+  img: brain.png
+  img_alt: Artwork of a human head with a neon brain inside. Intense light beams from outside are chipping away at the head and entering it. The brain is slightly rotting due to the beams.
+  img_cap:
+    <p>Artwork of a human head with a neon brain inside. Intense light beams from outside are chipping away at the head and entering it. The brain is slightly rotting due to the beams.</p>
+  group: personal
+
+#endregion

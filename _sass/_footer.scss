@@ -14,9 +14,10 @@ footer {
     >a {
         letter-spacing: normal;
 
-        transition: letter-spacing 0.2s;
+        transition: letter-spacing 0.1s;
 
         &:hover {
+            transform: none;
             letter-spacing: 1px;
         }
     }

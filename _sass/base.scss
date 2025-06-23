@@ -48,6 +48,7 @@ body {
     & div {
         display: flex;
         flex-flow: row;
+        flex-wrap: wrap;
         gap: 5px;
 
         & img {

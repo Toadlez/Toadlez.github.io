@@ -6,7 +6,7 @@
 
             <div class="middle" title="">
                 <b>{{ include.title }}</b>
-                    <img src="../{{ include.img }}" alt="">
+                    <img src="../{{ include.img }}" alt="{{ include.img_alt }}">
                 <center><a href="../{{ include.img }}" target="_blank">(open image in a new tab)</a></center>
                 <div class="caption">{{ include.img_cap }}</div>
             </div>
@@ -15,5 +15,3 @@
     <td>{{ include.title }}</td>
     <td>{{ include.date }}</td>
 </tr>
-
-
